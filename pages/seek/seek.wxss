@@ -1,0 +1,41 @@
+/* pages/seek/seek.wxss */
+
+.head{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.site-img{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+
+}
+.head-site{
+    height: 45px;
+    line-height: 45px;
+    padding: 0 5px 0 5px;
+    font-size: 16px;
+
+}
+.head-input{
+    border: 1px solid #e7e8e8;
+    height: 30px;
+    border-radius: 15px;
+    width: 65%;
+    text-indent: 30px;
+}
+.input-img{
+    width: 20px;
+    height: 20px;
+}
+.head-off{
+    height: 45px;
+    line-height: 45px;
+    padding: 0 5px 0 5px;
+    font-size: 16px;
+
+}

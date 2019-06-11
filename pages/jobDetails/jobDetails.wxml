@@ -1,0 +1,38 @@
+<!--pages/jobDetails/jobDetails.wxml-->
+<!-- 简单的职位描述 -->
+<view class='jobDetailsbBox'>
+    <view class='miaoshu'>
+        <view class='jobName'>{{jobDetails.name}}</view>
+        <view class='jobMoney'>
+            <text>{{jobDetails.salary}} </text>/{{jobDetails.city}} / {{jobDetails.workYear}} / {{jobDetails.education}}
+        </view>
+        <view class='jobLure'>
+            职位诱惑：公司背景好，福利好，实力雄厚
+        </view>
+
+            <!-- 公司描述 -->
+        <view class='miaoshu-gongsi'>
+            <view class='gongsi'>
+                <text class='gongsi-text'>{{jobDetails.companyShortName}}</text>
+                <text class='gongsi-text1'>{{jobDetails.companyFinanceStage}} / {{jobDetails.companySize}} / {{jobDetails.companyIndustryField}}</text>
+            </view>
+            <view class='gongsi-wrap'>
+                <image class='gongsi-logo' src='{{jobDetails.companyLogo}}'></image>
+            </view>
+            
+        </view>
+    </view>
+
+    <!-- 职位描述 -->
+    <view class='title'>职位描述</view>
+    <view class='btn'>PHP</view>
+    <view class='positionDetail'>
+
+
+        <view class='bottom'>
+            <text class='share'>分享</text>
+            <text class='collect'>收藏</text>
+            <text class='sendResume'>投递简历</text>
+        </view>
+    </view>
+</view>

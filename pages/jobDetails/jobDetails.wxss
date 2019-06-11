@@ -1,0 +1,126 @@
+/* pages/jobDetails/jobDetails.wxss */
+/* 简单的职位描述 */
+.jobDetailsbBox{
+  padding:0px 15px;
+}
+.miaoshu{
+  margin-top: 10px;
+  height: 190px;
+  /* background-color: pink */
+}
+.jobName{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.jobMoney{
+  font-size: 14px;
+  margin-bottom: 10px
+}
+.jobMoney text{
+  color: #FC613B;
+}
+.jobLure{
+  color: #CFCFCF;
+  font-size: 14px
+}
+
+/* 公司描述 */
+.miaoshu-gongsi{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 20px;
+}
+.gongsi{
+    height: 50px;
+    width: 280px;
+    display: inline-block;
+}
+.gongsi-text{
+    display: block;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+}
+.gongsi-text1{
+    display: block;
+    height: 25px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.gongsi-wrap{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    overflow: hidden
+
+}
+.gongsi-logo{
+    width: 50px;
+    height: 50px;
+
+}
+
+/* 职位描述 */
+.title{
+  font-size: 18px;
+  margin-bottom: 10px
+}
+.btn{
+  width: 70px;
+  height: 30px;
+  border: 1px solid #CFCFCF;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #CFCFCF
+}
+.positionDetail{
+  width: 100%;
+  height: 200px;
+  background-color: floralwhite;
+}
+/* bottom投递简历 */
+.bottom{
+  position: fixed;
+  bottom: 0px;
+  background-color: reba(255,255,255,.5);
+  width: 100%;
+}
+.bottom text{
+  display: inline-block;
+}
+.bottom .share,.collect{
+width: 17%;
+height: 50px;
+line-height: 50px;
+text-align: center;
+color: #CFCFCF;
+font-size: 14px;
+}
+.bottom .sendResume{
+  width: 58%;
+  background-color: #2BC998;
+  text-align: center;
+  line-height: 45px;
+  height: 45px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: white
+}
+
+
+
+
+
+
+
+
+
+

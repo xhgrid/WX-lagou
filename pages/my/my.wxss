@@ -1,0 +1,76 @@
+/* pages/my/my.wxss */
+.mypage{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 555px;
+    background-color: #f9fbfa;
+}
+.mypage-login{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.text{
+    width: 75%;
+    height: 45px;
+    padding-left: 15px;
+    letter-spacing: 1px;
+}
+.login-text{
+    font-size: 20px;
+    display: block;
+    line-height: 26px;
+
+}
+.login-text1{
+    font-size: 14px;
+    display: block;
+    line-height: 20px;
+}
+.login-portrait{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: right;
+}
+.mypage-info{
+    background-color: #fff;
+    margin-top: 10px;
+}
+.info-item{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #edeeef;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 50px;
+}
+.item-img{
+    width: 22px;
+    height: 22px;
+    padding: 0px 8px 0 15px;
+    position: relative;
+    top: 5px;
+}
+.item-img1{
+    width: 12px;
+    height: 13px;
+    padding: 0 15px 0 15px;
+    float: right;
+    margin-top: 20px;
+}
+
+.exit{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #5c5c5c;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+/* ------------------- */
+

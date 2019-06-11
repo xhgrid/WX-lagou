@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<view class='login'>
+    <text class='login-text'>登录拉勾</text>
+    <view class='login-ipt'>
+        <input placeholder="请输入手机号或邮箱" class='ipt-name' bindinput='userNamevalue' ></input>
+        <input placeholder="请输入密码" class='ipt-name' type='password'  bindinput='userPwdvalue' ></input>
+        <button bindtap='login' class='ipt-go'>登录</button>
+    </view>
+
+    <!-- <view class='wxlogin'>
+        <view class='info-center'>
+            <text class='center-xian'></text>
+            <text class='center-txt'>更多登录方式</text>
+            <text class='center-xian1'></text>
+        </view>
+        <image class='wxlogin-img' src='../../resource/img/weixin.png'></image>
+    </view> -->
+
+
+</view>
+
+

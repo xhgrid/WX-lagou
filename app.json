@@ -1,0 +1,49 @@
+{
+    "pages": [
+
+        "pages/position/position",
+        "pages/rankings/rankings",
+        "pages/my/my",
+        "pages/login/login",
+        "pages/logs/logs",
+        "pages/jobDetails/jobDetails",
+                        "pages/seek/seek",
+        "pages/index/index"
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#2bc998",
+        "navigationBarTitleText": "",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#00b38a",
+        "onReachBottomDistance": 350
+    },
+    "tabBar": {
+        "position": "bottom",
+        "backgroundColor": "#fff",
+        "selectedColor": "",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/position/position",
+                "text": "职位",
+                "iconPath": "resource/img/zhiwei.png",
+                "selectedIconPath": "resource/img/zhiwei0.png"
+            },
+            {
+                "pagePath": "pages/rankings/rankings",
+                "text": "排行榜",
+                "iconPath": "resource/img/paihang.png",
+                "selectedIconPath": "resource/img/paihang0.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "resource/img/my.png",
+                "selectedIconPath": "resource/img/my0.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

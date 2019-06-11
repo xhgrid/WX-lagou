@@ -1,0 +1,9 @@
+<!--pages/seek/seek.wxml-->
+<view class='head'>
+    <view class='head-site' > 成都 <image src='../../resource/img/back.png' class='site-img'></image></view>
+    <input  class='head-input' ></input>
+    <text class='head-off' bindtap='off'>取消</text>
+</view>
+<view>
+    
+</view>

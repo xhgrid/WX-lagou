@@ -1,0 +1,130 @@
+/* pages/rankings/rankings.wxss */
+
+.rankings{
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9
+}
+.info-img{
+    width: 100%;
+    height: 100px;
+}
+.rankings-info{
+    /* background-color: pink; */
+    margin-top: -5px;
+    text-align: center
+}
+.rankings-brief{
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    font-size: 12px;
+}
+.rankings-items{
+    height: 120px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding:0 15px 0 15px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #e9eaeb
+}
+
+.items-left{
+    width: 9%;
+    height: 80%;
+    position: relative;
+}
+.rankings-img{
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-top: 20px;
+}
+
+
+
+.items-middle{
+    width: 76%;
+    height: 100%-20px;
+    padding-top: 15px;
+}
+.middle-name{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    display: block
+}
+.middle-details{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    display:block;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.middle-staff{
+    width: 100%;
+    height: 59px;
+    display: flex;
+    align-items: center
+}
+.staff-img{
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+        background-color: #ffffff;
+}
+.img-logo{
+    width: 40px;
+    height: 40px;
+    margin-left: -2px;
+}
+.staff-datum{
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    align-items: center
+}
+.datum-name{
+    display: inline-block;
+    font-size: 14px;
+    overflow: hidden
+}
+.datum-baoguang{
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    margin-left: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 12px;
+    background-color: #fef1ec;
+    overflow: hidden;
+    color: #fe9376
+}
+
+
+.items-right{
+    width: 15%;
+    height: 100%-20px;
+    padding-top: 18px;
+}
+.right-logo{
+    width: 55px;
+    height: 50px;
+}
+.list-more {
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #fafafa;
+}

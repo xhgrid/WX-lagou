@@ -1,0 +1,45 @@
+<!--pages/my/my.wxml-->
+
+<view class='mypage'>
+    <view wx:if="{{!islogin}}" class='mypage-login' bindtap='clicklogin'>
+        <view class='text'>
+            <text class='login-text'>点击登录</text>
+            <text class='login-text1'>登录后查看更多信息</text>
+        </view>
+        <image class='login-portrait' src='../../resource/img/portrait.png'></image>
+    </view>
+
+    <view wx:if="{{islogin}}" class='mypage-login' bindtap='clicklogin'>
+        <view class='text'>
+            <text class='login-text'>{{username}}</text>
+            <text class='login-text1'>还没有填写个人介绍</text>
+        </view>
+        <image class='login-portrait' src='../../resource/img/portrait.png'></image>
+    </view>
+
+    <view class='mypage-info'>
+        <view class='info-item'>
+            <image class='item-img' src='../../resource/img/jianli.png'></image>
+            简历
+            <image class='item-img1' src='../../resource/img/rightback.png'></image>
+        </view>
+        <view class='info-item'>
+            <image class='item-img' src='../../resource/img/jilu.png'></image>
+            投递记录
+            <image class='item-img1' src='../../resource/img/rightback.png'></image>
+        </view>
+        <view class='info-item'>
+            <image class='item-img' src='../../resource/img/shoucang.png'></image>
+            职位收藏
+            <image class='item-img1' src='../../resource/img/rightback.png'></image>
+        </view>
+        <view class='info-item'>
+            <image class='item-img' src='../../resource/img/fankui.png'></image>
+            意见反馈
+            <image class='item-img1' src='../../resource/img/rightback.png'></image>
+        </view>
+    </view>
+
+    <text class='exit' wx:if="{{islogin}}" bindtap='exit'>退出登录</text>
+
+</view>

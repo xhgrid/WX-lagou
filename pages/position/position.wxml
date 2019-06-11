@@ -1,0 +1,70 @@
+<!--pages/position/position.wxml-->
+
+
+<view wx:if="{{isworks}}" class="oneContainer">
+    <view class="custom-info " style="display: block;" bindtap='seek'>
+        <image class='lagou_logo' src='../../resource/img/lagou.jpg'></image>
+        <button class='info-btn'>搜索公司/职位</button>
+    </view>
+
+    <view class='info-center'>
+        <text class='center-xian'></text>
+        <text class='center-txt'>为你推荐好的职位</text>
+        <text class='center-xian1'></text>
+    </view>
+
+    <view class="list">
+        <view bindtap='Detail' class="activeable list-item" data-positionid='{{item.positionId}}' data-companyid='{{item.companyId}}' wx:for="{{positionData}}" wx:key="{{item.companyId}}">
+            <image src='{{item.companyLogo}}' class="item-logo"></image>
+            <view class="item-desc">
+                <text class="item-title">{{item.name}}</text>
+                <view class="item-info">
+                    <text class="item-pos">{{item.companyShortName}}</text>
+                    <text class="item-salary">{{item.salary}}</text>
+                </view>
+                <view class='item-text'>
+                    <text style='padding-left:0px' class="item-time">{{item.city}}</text>
+                    <text class="item-time" wx:if="{{item.businessArea?true:false}}">{{item.businessArea}}</text>
+                    <text class="item-time">{{item.workYear}}</text>
+                    <text style='border-right: 0px' class="item-time">{{item.education}}</text>
+                    <text class="item-times">{{item.formattedUpdatedAt}}</text>
+                </view>
+            </view>
+        </view>
+        <text class="activeable list-more">没有更多了...</text>
+    </view>
+</view>
+
+<!-- ---------  登录后   ------------ -->
+
+<view wx:if="{{!isworks}}" class='twoContainer'>
+    <view class='info-you'>
+        <text class='you-xian'></text>
+        <text class='you-txt'>你期望的工作</text>
+        <text class='you-xian1'></text>
+    </view>
+    <view class='twoContainer-info'>
+        <view class='info-items'>
+            <view class='items-city'>
+                全国
+                <image class='items-back' src='../../resource/img/back.png'></image>
+            </view>
+            <input class='items-input' bindinput='isclick' value='{{work}}' placeholder="输入职位关键词，如：产品"></input>
+        </view>
+        <view class='info-work'>
+            <text id='Java' class='work-items {{(work=="Java")?"active":"noactive"}}' bindtap='work'>Java</text>
+            <text id='PHP' class='work-items  {{(work=="PHP")?"active":"noactive"}}' bindtap='work'>PHP</text>
+            <text id='Android' class='work-items  {{(work=="Android")?"active":"noactive"}}' bindtap='work'>Android</text>
+            <text id='iOS' class='work-items  {{(work=="iOS")?"active":"noactive"}}' bindtap='work'>iOS</text>
+            <text id='前端' class='work-items  {{(work=="前端")?"active":"noactive"}}' bindtap='work'>前端</text>
+            <text id='测试' class='work-items  {{(work=="测试")?"active":"noactive"}}' bindtap='work'>测试</text>
+            <text id='运维' class='work-items  {{(work=="运维")?"active":"noactive"}}' bindtap='work'>运维</text>
+            <text id='产品经理' class='work-items  {{(work=="产品经理")?"active":"noactive"}}' bindtap='work'>产品经理</text>
+            <text id='设计师' class='work-items  {{(work=="设计师")?"active":"noactive"}}' bindtap='work'>设计师</text>
+            <text id='运营' class='work-items  {{(work=="运营")?"active":"noactive"}}' bindtap='work'>运营</text>
+            <text id='市场' class='work-items  {{(work=="市场")?"active":"noactive"}}' bindtap='work'>市场</text>
+            <text id='销售经理' class='work-items {{(work=="销售经理")?"active":"noactive"}}' bindtap='work'  >销售经理</text>
+        </view>
+        <button class='info-go' disabled="{{disabled}}" bindtap='gowork' style='background-color:{{color}}'>我选好了，去找工作</button>
+    </view>
+</view>
